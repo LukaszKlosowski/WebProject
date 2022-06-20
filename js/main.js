@@ -9,3 +9,10 @@ headerTextBox.classList.toggle('text-slick', viewportWidth < 992)
 btnHeader.addEventListener('click', () => {
 	location.href = '#services';
 });
+
+const setup = () => {
+	const footerYear = document.querySelector('.footer__current-year');
+	footerYear.textContent = new Date().getFullYear();
+};
+
+document.addEventListener('DOMContentLoaded', setup);
