@@ -12,7 +12,6 @@
             transform: translate(-50%, 0);
   }
 }
-
 @keyframes arrowMove {
   0% {
     -webkit-transform: translate(-50%, 0);
@@ -27,7 +26,6 @@
             transform: translate(-50%, 0);
   }
 }
-
 *,
 *::after,
 *::before {
@@ -45,7 +43,7 @@
 body {
   background-color: #fafafa;
   color: #484851;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
 }
@@ -53,7 +51,6 @@ body {
 .section {
   padding: 4em 0 10em;
 }
-
 .section-title {
   padding: 0 1em;
   text-align: center;
@@ -62,7 +59,6 @@ body {
   font-size: 3.2rem;
   text-transform: uppercase;
 }
-
 .section-title--left {
   padding: 0;
   text-align: center;
@@ -92,9 +88,8 @@ body {
   background-color: #fff;
   -webkit-box-shadow: 0 0 15px #18181b;
           box-shadow: 0 0 15px #18181b;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-
 .nav-mobile__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,11 +102,9 @@ body {
           align-items: flex-end;
   padding: 0.7em 0;
 }
-
 .nav-mobile__company-logo {
   height: 20px;
 }
-
 .nav-mobile__scroll-bar {
   position: absolute;
   top: 0;
@@ -119,7 +112,6 @@ body {
   height: 8px;
   background-color: #e63946;
 }
-
 .nav-mobile__items {
   display: none;
   -webkit-box-pack: end;
@@ -130,7 +122,6 @@ body {
           align-items: center;
   padding: 0.7em 0;
 }
-
 .nav-mobile__item {
   padding: 0 1em;
   color: #18181b;
@@ -138,18 +129,15 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 .nav-mobile__item--highlight {
   padding: 0 0.1em 0 0.5em;
   color: #e63946;
   font-weight: 600;
 }
-
 .nav-mobile a {
   -webkit-transition: 0.3s color;
   transition: 0.3s color;
 }
-
 .nav-mobile a:hover {
   color: #e63946;
 }
@@ -159,23 +147,18 @@ body {
 ========================================================================== */
 .header {
   position: relative;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (minmax(10px, 1fr))[2];
-      grid-template-rows: repeat(2, minmax(10px, 1fr));
+  grid-template-rows: repeat(2, minmax(10px, 1fr));
   height: 100vh;
   background-image: url("../img/header-mobile.jpg");
   background-position: bottom;
   background-size: cover;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-
 .header__img-container {
   position: absolute;
   top: 30%;
   left: -30%;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
   grid-row: 1/2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,14 +170,10 @@ body {
       -ms-flex-align: end;
           align-items: end;
 }
-
 .header__img {
   height: 300px;
 }
-
 .header__container {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
   grid-row: 2/3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,25 +182,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-
 .header__company-logo {
   height: 40px;
 }
-
 .header__company-owner {
   color: #484851;
   font-size: 1.8rem;
   font-weight: 900;
   text-transform: uppercase;
 }
-
 .header__company-info {
   margin-top: 0.5em;
   padding: 0.5em;
@@ -231,15 +207,11 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
-
 .header__text-box {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(10px, 1fr);
-      grid-template-columns: minmax(10px, 1fr);
+  grid-template-columns: minmax(10px, 1fr);
   margin-top: 1.5em;
 }
-
 .header__text {
   padding: 0.5em 3em;
   font-weight: 700;
@@ -247,7 +219,6 @@ body {
   line-height: 150%;
   text-align: center;
 }
-
 .header__btn {
   margin-top: 1.5em;
   padding: 0.7em 1em;
@@ -262,7 +233,6 @@ body {
   -webkit-transition: 0.5s color, 0.5s background-color;
   transition: 0.5s color, 0.5s background-color;
 }
-
 .header__btn:hover {
   color: #e63946;
   background-color: #484851;
@@ -273,6 +243,16 @@ body {
 ========================================================================== */
 /* Section About
 ========================================================================== */
+.illustration {
+  position: relative;
+}
+.illustration__cctv {
+  display: none;
+}
+.illustration__man {
+  display: none;
+}
+
 .about__boxes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,7 +268,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .about__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,11 +283,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .about__box:last-of-type {
   margin-bottom: 0;
 }
-
 .about__box-icon {
   margin: 1em 0 0.5em;
   border-radius: 50%;
@@ -320,14 +297,12 @@ body {
   line-height: 4.2rem;
   text-align: center;
 }
-
 .about__box-text {
   font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
   line-height: 150%;
 }
-
 .about__box-text--strong {
   font-size: 1.5rem;
   font-weight: 700;
@@ -336,33 +311,20 @@ body {
   text-transform: uppercase;
 }
 
-.illustration {
-  position: relative;
-}
-
-.illustration__cctv {
-  display: none;
-}
-
-.illustration__man {
-  display: none;
-}
-
-.illustration__img-cctv {
-  height: 100px;
-}
-
-.illustration__img-man {
-  height: 350px;
-}
-
 /* Section Service
 ========================================================================== */
 .services {
   padding-bottom: 8em;
   background-color: #18181b;
 }
-
+.services-top__img {
+  position: relative;
+  height: 40vh;
+  background-image: url(../img/service-office.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
 .services__img {
   position: relative;
   height: 200px;
@@ -371,20 +333,16 @@ body {
   background-size: cover;
   opacity: 30%;
 }
-
 .services-title {
   margin-top: 2em;
 }
-
 .services__card {
-  display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   color: #fafafa;
 }
-
 .services__card-item {
   position: relative;
   overflow: hidden;
@@ -393,11 +351,9 @@ body {
   padding: 1em 0;
   width: 280px;
 }
-
 .services__card-item:last-of-type {
   margin-bottom: 0;
 }
-
 .services__card-item button {
   position: absolute;
   z-index: 1;
@@ -408,12 +364,10 @@ body {
   color: #fafafa;
   font-size: 2rem;
 }
-
 .services__card-item button:hover ~ .services__card-front-text {
   -webkit-clip-path: circle(140% at 95% 95%);
           clip-path: circle(140% at 95% 95%);
 }
-
 .services__card-front {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -429,22 +383,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .services__card-front-title {
   font-size: 2rem;
   font-weight: 700;
 }
-
 .services__card-front-icon {
   padding: 1em 0;
 }
-
 .services__card-front-description {
   font-size: 1.5rem;
   font-weight: 200;
   text-align: center;
 }
-
 .services__card-front-text {
   position: absolute;
   top: 0;
@@ -472,9 +422,8 @@ body {
   z-index: 0;
   padding-bottom: 5em;
 }
-
 .contact::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   bottom: 0;
@@ -486,17 +435,13 @@ body {
   background-size: cover;
   opacity: 0.15;
 }
-
 .contact__grid {
-  display: -ms-grid;
   display: grid;
   z-index: 1;
 }
-
 .contact__form {
   margin-top: 4em;
 }
-
 .contact__form form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,7 +458,6 @@ body {
           justify-content: center;
   font-size: 1.6rem;
 }
-
 .contact__form input,
 .contact__form textarea {
   margin: 0.5em 0;
@@ -523,18 +467,15 @@ body {
   font-size: inherit;
   font-family: inherit;
 }
-
 .contact__form input:focus,
 .contact__form textarea:focus {
   outline: none;
   border: 2px solid #e63946;
 }
-
 .contact__form textarea {
   min-height: 150px;
   resize: vertical;
 }
-
 .contact__form button {
   margin-top: 1em;
   padding: 0.7em 2em;
@@ -547,38 +488,30 @@ body {
   -webkit-transition: border 0.3s, background-color 0.3s, color 0.3s;
   transition: border 0.3s, background-color 0.3s, color 0.3s;
 }
-
 .contact__form button:hover {
   border: 2px solid #18181b;
   background-color: #fafafa;
   color: #18181b;
 }
-
 .contact__info {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  grid-template-rows: auto;
   justify-items: center;
 }
-
 .contact__info-divider {
   width: 70%;
   height: 2px;
   background-color: #18181b;
 }
-
 .contact__info-header {
   margin-bottom: 1em;
   font-size: 2.4rem;
   font-weight: 700;
   text-align: center;
 }
-
 .contact__info-body {
   margin: 2em 0;
 }
-
 .contact__info-body-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,33 +521,27 @@ body {
           align-items: center;
   margin-bottom: 1em;
 }
-
 .contact__info-body-box:last-of-type {
   margin-bottom: 0;
 }
-
 .contact__info-body-icon {
   width: 40px;
   font-size: 2.4rem;
   text-align: center;
 }
-
 .contact__info-body-text {
   padding-left: 1em;
 }
-
 .contact__info-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 1em;
 }
-
 .contact__info-footer-box {
   margin: 0 1em;
   text-align: center;
 }
-
 .contact__info-footer-icon {
   font-weight: 700;
 }
@@ -629,11 +556,9 @@ body {
   color: #fafafa;
   text-align: center;
 }
-
 .footer img {
   height: 35px;
 }
-
 .footer__polygon {
   position: absolute;
   top: -1%;
@@ -646,14 +571,12 @@ body {
   -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
           clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
-
 .footer__divider {
   margin: 2em auto 1em;
   width: 100%;
   height: 1px;
   background-color: rgba(250, 250, 250, 0.1);
 }
-
 .footer__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,19 +592,15 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
 }
-
 .footer__body-left .fa-linkedin {
   font-size: 1.2em;
 }
-
 .footer__body-left span {
   font-weight: 700;
 }
-
 .footer__body-right {
   margin-top: 1.5em;
 }
-
 .footer__body-right i {
   padding-right: 0.3em;
   font-size: 2rem;
@@ -697,14 +616,14 @@ body {
     margin: 0 2em;
   }
   /* ========================================================================== 
-    Navigation
-    ========================================================================== */
+     Navigation
+     ========================================================================== */
   .nav-mobile__company-logo {
     height: 22px;
   }
   /* ========================================================================== 
-    Header
-    ========================================================================== */
+     Header
+     ========================================================================== */
   .header__text {
     font-size: 1.4rem;
   }
@@ -712,13 +631,12 @@ body {
     font-size: 1.4rem;
   }
   /* ========================================================================== 
-    About
-    ========================================================================== */
+     About
+     ========================================================================== */
   .about__box-text {
     font-size: 1.4rem;
   }
 }
-
 /* Media Queries
 ========================================================================== */
 @media (min-width: 576px) {
@@ -726,16 +644,25 @@ body {
     font-size: 3.6rem;
   }
   /* ========================================================================== 
-    Navigation
-    ========================================================================== */
+     Navigation
+     ========================================================================== */
   .nav-mobile__company-logo {
     height: 24px;
   }
   /* ========================================================================== 
-    Header
-    ========================================================================== */
-  .header__company-name {
-    font-size: 3.8rem;
+     Header
+     ========================================================================== */
+  .header__img-container {
+    left: -20%;
+  }
+  .header__img {
+    height: 400px;
+  }
+  .header__company-logo {
+    height: 60px;
+  }
+  .header__company-info {
+    font-size: 2rem;
   }
   .header__company-owner {
     font-size: 2.8rem;
@@ -748,10 +675,21 @@ body {
     font-size: 1.5rem;
   }
   /* ========================================================================== 
-    Main
-	========================================================================== */
+     Main
+  ========================================================================== */
+  /* Section About
+  ========================================================================== */
+  .about__box {
+    margin: 0 2em;
+  }
+  .about__box-text {
+    font-size: 1.5rem;
+  }
+  .about__box-text--strong {
+    font-size: 1.8rem;
+  }
   /* Section Contact
-	========================================================================== */
+  ========================================================================== */
   .contact__info-divider {
     width: 50%;
   }
@@ -768,8 +706,8 @@ body {
     font-size: 2rem;
   }
   /* ========================================================================== 
-    Footer
-    ========================================================================== */
+     Footer
+     ========================================================================== */
   .footer__body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -786,7 +724,6 @@ body {
     margin-top: 0;
   }
 }
-
 /* Media Queries
 ========================================================================== */
 @media (min-width: 768px) {
@@ -794,8 +731,8 @@ body {
     margin: 0 2em;
   }
   /* ========================================================================== 
-    Navigation
-    ========================================================================== */
+     Navigation
+     ========================================================================== */
   .nav-mobile {
     display: none;
   }
@@ -808,7 +745,7 @@ body {
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 15px #18181b;
             box-shadow: 0 0 15px #18181b;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
   }
   .nav-desktop__box {
     display: -webkit-box;
@@ -869,10 +806,16 @@ body {
     color: #e63946;
   }
   /* ========================================================================== 
-    Header
-    ========================================================================== */
-  .header__company-name {
-    font-size: 4.8rem;
+     Header
+     ========================================================================== */
+  .header__img-container {
+    left: -15%;
+  }
+  .header__company-logo {
+    height: 80px;
+  }
+  .header__company-info {
+    font-size: 2.6rem;
   }
   .header__company-owner {
     font-size: 3.6rem;
@@ -880,8 +823,26 @@ body {
   .header__btn {
     font-size: 1.8rem;
   }
+  /* ========================================================================== 
+     Main
+  ========================================================================== */
+  /* Section About
+  ========================================================================== */
+  .about__box {
+    margin: 0 4em;
+  }
+  .about__box-text {
+    font-size: 1.6rem;
+  }
+  .about__box-text--strong {
+    font-size: 1.8rem;
+  }
+  /* Section Services
+  ========================================================================== */
+  .services__card {
+    grid-template-columns: repeat(2, minmax(10px, 1fr));
+  }
 }
-
 /* Media Queries - Large Device
 ========================================================================== */
 @media (min-width: 992px) {
@@ -895,8 +856,8 @@ body {
     margin: 0 8em;
   }
   /* ========================================================================== 
-    Navigation
-    ========================================================================== */
+     Navigation
+     ========================================================================== */
   .nav-desktop__company-logo {
     height: 24px;
   }
@@ -904,19 +865,17 @@ body {
     font-size: 1.6rem;
   }
   /* ========================================================================== 
-    Header
-    ========================================================================== */
-  .header__company-name {
-    font-size: 3.8rem;
+     Header
+     ========================================================================== */
+  .header__img-container {
+    left: -10%;
   }
   .header__company-owner {
-    font-size: 5.4rem;
+    font-size: 3.8rem;
   }
   .header__text-box {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(10px, 1fr))[3];
-        grid-template-columns: repeat(3, minmax(10px, 1fr));
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
   }
   .header__text {
     border-right: 1px solid #484851;
@@ -930,28 +889,28 @@ body {
     font-size: 1.5rem;
   }
   /* ========================================================================== 
-    Main
-	========================================================================== */
+     Main
+  ========================================================================== */
+  /* Section Services
+  ========================================================================== */
+  .services__card {
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
+  }
   /* Section Contact
-	========================================================================== */
+  ========================================================================== */
   .contact::before {
-    height: 90%;
+    height: 80%;
     background-image: url(../img/contact-woman.png);
-    background-position: 50% center;
+    background-position: 10% center;
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 1;
   }
   .contact__grid {
-    -ms-grid-columns: (minmax(10px, 1fr))[2];
-        grid-template-columns: repeat(2, minmax(10px, 1fr));
+    grid-template-columns: repeat(2, minmax(10px, 1fr));
   }
   .contact__form {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
     grid-row: 1/2;
     margin-top: 0;
   }
@@ -959,11 +918,7 @@ body {
     font-size: 1.8rem;
   }
   .contact__info {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
   .contact__info-divider {
@@ -987,7 +942,6 @@ body {
     font-size: 2rem;
   }
 }
-
 /* Media Queries - Extra Large Device
 ========================================================================== */
 @media (min-width: 1200px) {
@@ -996,8 +950,11 @@ body {
     max-width: 1040px;
   }
   /* ========================================================================== 
-    Header
-    ========================================================================== */
+     Header
+     ========================================================================== */
+  .header__img-container {
+    left: -5%;
+  }
   .header__text {
     padding: 0 1em;
     font-size: 1.5rem;
@@ -1006,35 +963,88 @@ body {
     font-size: 1.5rem;
   }
   /* ========================================================================== 
-    Main
-	========================================================================== */
+     Main
+  ========================================================================== */
   /* Section Contact
-	========================================================================== */
+  ========================================================================== */
   .contact::before {
-    background-position: 30% center;
+    background-position: 20% center;
   }
 }
-
 /* Media Queries - Extra Extra Large Device
 ========================================================================== */
 @media (min-width: 1400px) {
+  .section-title--left {
+    text-align: left;
+  }
   /* ========================================================================== 
-    Navigation
-    ========================================================================== */
+     Navigation
+     ========================================================================== */
   .nav-mobile {
     display: none;
   }
   /* ========================================================================== 
-    Header
-    ========================================================================== */
-  .header__company-name {
-    font-size: 4.8rem;
+     Header
+     ========================================================================== */
+  .header__container {
+    grid-row: 1/3;
+  }
+  .header__img-container {
+    left: -2%;
   }
   .header__company-owner {
     font-size: 4.2rem;
   }
+  .header__company-info {
+    font-size: 3rem;
+  }
+  .header__text-box {
+    margin-top: 3em;
+  }
   .header__btn {
+    margin-top: 6em;
     font-size: 1.8rem;
   }
-}
-/*# sourceMappingURL=main.css.map */
+  /* Section About
+  ========================================================================== */
+  .illustration {
+    position: relative;
+  }
+  .illustration__cctv {
+    display: block;
+    position: absolute;
+    left: 5px;
+  }
+  .illustration__man {
+    display: block;
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+  }
+  .illustration__img-cctv {
+    height: 100px;
+  }
+  .illustration__img-man {
+    height: 350px;
+  }
+  .about__boxes {
+    margin: 0 10em;
+  }
+  .about__box-icon {
+    width: 6.2rem;
+    height: 6.2rem;
+    font-size: 3.2rem;
+    line-height: 6.2rem;
+  }
+  .about__box-text {
+    font-size: 2rem;
+  }
+  .about__box-text--strong {
+    font-size: 2.4rem;
+  }
+  /* Section Contact
+  ========================================================================== */
+  .contact::before {
+    background-position: 30% center;
+  }
+}/*# sourceMappingURL=main.css.map */
