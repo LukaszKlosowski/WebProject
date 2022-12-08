@@ -320,7 +320,7 @@ body {
 .services-top__img {
   position: relative;
   height: 40vh;
-  background-image: url(../img/service-office.jpg);
+  background-image: url(../img/service-office-small.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -839,6 +839,14 @@ body {
   }
   /* Section Services
   ========================================================================== */
+  .services-top__img {
+    position: relative;
+    height: 40vh;
+    background-image: url(../img/service-office.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
   .services__card {
     grid-template-columns: repeat(2, minmax(10px, 1fr));
   }
